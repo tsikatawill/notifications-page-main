@@ -43,9 +43,9 @@ body {
 }
 
 .notifications-container {
-  max-width: 45rem;
+  max-width: 44rem;
   background-color: white;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 5px 5px 20px $LightGrayishBlue1;
   margin: 3rem auto;
@@ -166,7 +166,7 @@ body {
           border: 1px solid $LightGrayishBlue2;
           color: $DarkGrayishBlue;
           padding: 1rem;
-          margin-top: 5px;
+          margin-top: 10px;
           border-radius: 5px;
           cursor: pointer;
 
