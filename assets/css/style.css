@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.2s ease-out;
+}
+
+a {
+  color: inherit;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  background-color: hsl(210, 60%, 98%);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.notifications-container {
+  max-width: 45rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px hsl(211, 68%, 94%);
+  margin: 3rem auto;
+}
+.notifications-container .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.notifications-container .head div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.notifications-container .head div h1 {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+.notifications-container .head .notification-count {
+  display: grid;
+  place-content: center;
+  height: 25px;
+  width: 30px;
+  color: white;
+  background-color: hsl(219, 85%, 26%);
+  border-radius: 5px;
+}
+.notifications-container .head button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: hsl(219, 12%, 42%);
+}
+.notifications-container .head button:focus, .notifications-container .head button:hover {
+  outline: 0;
+  color: hsl(219, 85%, 26%);
+}
+.notifications-container .head button:active {
+  outline: 0;
+}
+.notifications-container .body .notification-card {
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  gap: 10px;
+}
+.notifications-container .body .notification-card:not(:last-child) {
+  margin-bottom: 10px;
+}
+.notifications-container .body .notification-card.unread {
+  background-color: hsl(211, 68%, 94%);
+}
+.notifications-container .body .notification-card.unread .unread-dot {
+  height: 7px;
+  width: 7px;
+  margin-bottom: 3px;
+  margin-left: 3px;
+  display: inline-block !important;
+  background-color: hsl(1, 90%, 64%);
+  border-radius: 50%;
+}
+.notifications-container .body .notification-card .user-dp {
+  flex-shrink: 0;
+  height: 50px;
+  width: 50px;
+}
+.notifications-container .body .notification-card .user-dp img {
+  height: 100%;
+  width: 100%;
+}
+.notifications-container .body .notification-card .text-info {
+  color: hsl(219, 14%, 63%);
+}
+.notifications-container .body .notification-card .text-info .name {
+  color: hsl(224, 21%, 14%);
+  font-weight: 800;
+  cursor: pointer;
+}
+.notifications-container .body .notification-card .text-info .name:hover, .notifications-container .body .notification-card .text-info .name:focus {
+  color: hsl(219, 85%, 26%);
+}
+.notifications-container .body .notification-card .text-info .post {
+  color: hsl(219, 12%, 42%);
+  font-weight: 800;
+  cursor: pointer;
+}
+.notifications-container .body .notification-card .text-info .post:hover, .notifications-container .body .notification-card .text-info .post:focus {
+  color: hsl(219, 85%, 26%);
+}
+.notifications-container .body .notification-card .text-info .time {
+  color: hsl(219, 14%, 63%);
+  margin-top: 5px;
+}
+.notifications-container .body .notification-card .text-info .message {
+  border: 1px solid hsl(205, 33%, 90%);
+  color: hsl(219, 12%, 42%);
+  padding: 1rem;
+  margin-top: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.notifications-container .body .notification-card .text-info .message:hover, .notifications-container .body .notification-card .text-info .message:focus {
+  background-color: hsl(211, 68%, 94%);
+}
+.notifications-container .body .notification-card .text-info .unread-dot {
+  display: none;
+}
+.notifications-container .body .notification-card .text-info small {
+  display: block;
+}
