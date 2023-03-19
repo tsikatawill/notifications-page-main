@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+
+$Red: hsl(1, 90%, 64%);
+$Blue: hsl(219, 85%, 26%);
+$White: hsl(0, 0%, 100%);
+$VeryLightGrayishBlue: hsl(210, 60%, 98%);
+$LightGrayishBlue1: hsl(211, 68%, 94%);
+$LightGrayishBlue2: hsl(205, 33%, 90%);
+$GrayishBlue: hsl(219, 14%, 63%);
+$DarkGrayishBlue: hsl(219, 12%, 42%);
+$VeryDarkBlue: hsl(224, 21%, 14%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.2s ease-out;
+}
+
+a {
+  color: inherit;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  background-color: $VeryLightGrayishBlue;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+.notifications-container {
+  max-width: 45rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px $LightGrayishBlue1;
+  margin: 3rem auto;
+
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      h1 {
+        font-size: 1.2rem;
+        font-weight: 800;
+      }
+    }
+
+    .notification-count {
+      display: grid;
+      place-content: center;
+      height: 25px;
+      width: 30px;
+      color: white;
+      background-color: $Blue;
+      border-radius: 5px;
+    }
+
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: $DarkGrayishBlue;
+
+      &:focus,
+      &:hover {
+        outline: 0;
+        color: $Blue;
+      }
+
+      &:active {
+        outline: 0;
+      }
+    }
+  }
+
+  .body {
+    .notification-card {
+      background-color: transparent;
+      border-radius: 10px;
+      padding: 1rem;
+      display: flex;
+      gap: 10px;
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+
+      &.unread {
+        background-color: $LightGrayishBlue1;
+
+        .unread-dot {
+          height: 7px;
+          width: 7px;
+          margin-bottom: 3px;
+          margin-left: 3px;
+          display: inline-block !important;
+          background-color: $Red;
+          border-radius: 50%;
+        }
+      }
+
+      .user-dp {
+        flex-shrink: 0;
+        height: 50px;
+        width: 50px;
+
+        & img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      .text-info {
+        color: $GrayishBlue;
+
+        .name {
+          color: $VeryDarkBlue;
+          font-weight: 800;
+          cursor: pointer;
+
+          &:hover,
+          &:focus {
+            color: $Blue;
+          }
+        }
+
+        .post {
+          color: $DarkGrayishBlue;
+          font-weight: 800;
+          cursor: pointer;
+
+          &:hover,
+          &:focus {
+            color: $Blue;
+          }
+        }
+
+        .time {
+          color: $GrayishBlue;
+          margin-top: 5px;
+        }
+
+        .message {
+          border: 1px solid $LightGrayishBlue2;
+          color: $DarkGrayishBlue;
+          padding: 1rem;
+          margin-top: 5px;
+          border-radius: 5px;
+          cursor: pointer;
+
+          &:hover,
+          &:focus {
+            background-color: $LightGrayishBlue1;
+          }
+        }
+
+        .unread-dot {
+          display: none;
+        }
+
+        small {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+}
