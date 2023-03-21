@@ -75,20 +75,20 @@ body {
 .notifications-container .head button:active {
   outline: 0;
 }
-.notifications-container .body .notification-card {
+.notifications-container .content .notification-card {
   background-color: transparent;
   border-radius: 10px;
   padding: 1rem;
   display: flex;
   gap: 10px;
 }
-.notifications-container .body .notification-card:not(:last-child) {
+.notifications-container .content .notification-card:not(:last-child) {
   margin-bottom: 10px;
 }
-.notifications-container .body .notification-card.unread {
+.notifications-container .content .notification-card.unread {
   background-color: hsl(211, 68%, 94%);
 }
-.notifications-container .body .notification-card.unread .unread-dot {
+.notifications-container .content .notification-card.unread .unread-dot {
   height: 7px;
   width: 7px;
   margin-bottom: 3px;
@@ -97,39 +97,39 @@ body {
   background-color: hsl(1, 90%, 64%);
   border-radius: 50%;
 }
-.notifications-container .body .notification-card .user-dp {
+.notifications-container .content .notification-card .user-dp {
   flex-shrink: 0;
   height: 50px;
   width: 50px;
 }
-.notifications-container .body .notification-card .user-dp img {
+.notifications-container .content .notification-card .user-dp img {
   height: 100%;
   width: 100%;
 }
-.notifications-container .body .notification-card .text-info {
+.notifications-container .content .notification-card .text-info {
   color: hsl(219, 14%, 63%);
 }
-.notifications-container .body .notification-card .text-info .name {
+.notifications-container .content .notification-card .text-info .name {
   color: hsl(224, 21%, 14%);
   font-weight: 800;
   cursor: pointer;
 }
-.notifications-container .body .notification-card .text-info .name:hover, .notifications-container .body .notification-card .text-info .name:focus {
+.notifications-container .content .notification-card .text-info .name:hover, .notifications-container .content .notification-card .text-info .name:focus {
   color: hsl(219, 85%, 26%);
 }
-.notifications-container .body .notification-card .text-info .post {
+.notifications-container .content .notification-card .text-info .post {
   color: hsl(219, 12%, 42%);
   font-weight: 800;
   cursor: pointer;
 }
-.notifications-container .body .notification-card .text-info .post:hover, .notifications-container .body .notification-card .text-info .post:focus {
+.notifications-container .content .notification-card .text-info .post:hover, .notifications-container .content .notification-card .text-info .post:focus {
   color: hsl(219, 85%, 26%);
 }
-.notifications-container .body .notification-card .text-info .time {
+.notifications-container .content .notification-card .text-info .time {
   color: hsl(219, 14%, 63%);
   margin-top: 5px;
 }
-.notifications-container .body .notification-card .text-info .message {
+.notifications-container .content .notification-card .text-info .message {
   border: 1px solid hsl(205, 33%, 90%);
   color: hsl(219, 12%, 42%);
   padding: 1rem;
@@ -137,21 +137,21 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
-.notifications-container .body .notification-card .text-info .message:hover, .notifications-container .body .notification-card .text-info .message:focus {
+.notifications-container .content .notification-card .text-info .message:hover, .notifications-container .content .notification-card .text-info .message:focus {
   background-color: hsl(211, 68%, 94%);
 }
-.notifications-container .body .notification-card .text-info .unread-dot {
+.notifications-container .content .notification-card .text-info .unread-dot {
   display: none;
 }
-.notifications-container .body .notification-card .text-info small {
+.notifications-container .content .notification-card .text-info small {
   display: block;
 }
-.notifications-container .body .notification-card .image {
+.notifications-container .content .notification-card .image {
   margin-left: auto;
   width: 50px;
   height: 50px;
 }
-.notifications-container .body .notification-card .image img {
+.notifications-container .content .notification-card .image img {
   width: 100%;
   height: 100%;
 }
